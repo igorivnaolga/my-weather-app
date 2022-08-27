@@ -35,6 +35,18 @@ li :first-letter {
   border: 1px solid #dadde1;
   border-radius: 5px;
 }
+.row {
+  max-width: 500px;
+}
+#current-button {
+  color: #ffca2c;
+  width: 100px;
+}
+#search-button {
+  color: #0b5ed7;
+  width: 100px;
+}
+
 .overview {
   margin-bottom: 20px;
 }
