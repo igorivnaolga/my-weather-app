@@ -56,6 +56,20 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
+function searchLocation(position) {
+  let apiKey = "ff833e479a6ba8688180b478fbf4489b";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
+let currentLocationButton = document.querySelector("#current-button");
+currentLocationButton.addEventListener("click", getCurrentLocation);
+
 search("Christchurch");
 
 let form = document.querySelector("#search-form");
