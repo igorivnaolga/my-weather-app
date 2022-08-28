@@ -34,20 +34,35 @@ a {
   margin: 30px auto;
 }
 .weather-app {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgba(234, 249, 249, 0.67) 0.1%,
+    rgba(239, 249, 251, 0.63) 90.1%
+  );
+
   padding: 20px;
-  border: 1px solid #dadde1;
   border-radius: 5px;
 }
 .row {
   max-width: 500px;
 }
+#city-input {
+  background-color: #f2f2f1;
+  border: none;
+}
 #current-button {
-  color: #ffca2c;
+  background-color: #e5c809;
+  color: #2dafe7;
+  font-weight: 700;
   width: 100px;
+  border: none;
 }
 #search-button {
-  color: #0b5ed7;
+  background-color: #2dafe7;
+  color: #e5c809;
+  font-weight: 700;
   width: 100px;
+  border: none;
 }
 
 .overview {
