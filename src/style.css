@@ -1,9 +1,10 @@
 body {
   font-family: "Montserrat", sans-serif;
+  color: #f2f2f1;
 }
 
 h1 {
-  color: rgb(50, 46, 46);
+  color: #f2f2f1;
   margin-top: 20px;
   font-size: 28px;
   font-family: "Merriweather", serif;
@@ -28,16 +29,27 @@ li :first-letter {
 }
 a {
   text-decoration: none;
+  color: #0353a2;
 }
+small strong {
+  color: #6c757d;
+}
+small a {
+  text-decoration: underline;
+}
+a:hover {
+  color: #0262bf;
+}
+
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
 }
 .weather-app {
   background: radial-gradient(
-    circle at 10% 20%,
-    rgba(234, 249, 249, 0.67) 0.1%,
-    rgba(239, 249, 251, 0.63) 90.1%
+    circle at 22.4% 21.7%,
+    rgb(4, 189, 228) 0%,
+    rgb(2, 83, 185) 100.2%
   );
 
   padding: 20px;
@@ -45,24 +57,6 @@ a {
 }
 .row {
   max-width: 500px;
-}
-#city-input {
-  background-color: #f2f2f1;
-  border: none;
-}
-#current-button {
-  background-color: #e5c809;
-  color: #2dafe7;
-  font-weight: 700;
-  width: 100px;
-  border: none;
-}
-#search-button {
-  background-color: #2dafe7;
-  color: #e5c809;
-  font-weight: 700;
-  width: 100px;
-  border: none;
 }
 
 .overview {
@@ -77,7 +71,7 @@ a {
   font-size: 64px;
   line-height: 1;
   font-weight: 600;
-  color: rgb(50, 46, 46);
+  color: #f2f2f1;
 }
 .weather-temperature .units {
   position: relative;
@@ -86,8 +80,25 @@ a {
   font-weight: 600;
 }
 .weather-temperature .active {
-  color: #322e2e;
+  color: #f2f2f1;
 }
 .weather-temperature .active:hover {
   text-decoration: none;
+}
+#city-input {
+  background-color: #f2f2f1;
+  color: #0262bf;
+  border: none;
+}
+#current-button {
+  background-color: #f2f2f1;
+  color: #0262bf;
+  font-weight: 700;
+  width: 100px;
+}
+#search-button {
+  background-color: #f2f2f1;
+  color: #0262bf;
+  font-weight: 700;
+  width: 100px;
 }
