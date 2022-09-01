@@ -85,22 +85,28 @@ a:hover {
 .weather-temperature .active:hover {
   text-decoration: none;
 }
+#search-form {
+  margin-right: 20px;
+}
 #city-input {
   background-color: #f2f2f1;
-  color: #0262bf;
+
+  font-size: bold;
   border: none;
 }
 #current-button {
   background-color: #f2f2f1;
-  color: #0262bf;
+  color: #037eca;
   font-weight: 700;
-  width: 100px;
+  width: 150px;
+  border-color: #037eca;
 }
 #search-button {
   background-color: #f2f2f1;
-  color: #0262bf;
+  color: #037eca;
   font-weight: 700;
-  width: 100px;
+  width: 150px;
+  border-color: #037eca;
 }
 .weather-forecast {
   margin-top: 20px;
